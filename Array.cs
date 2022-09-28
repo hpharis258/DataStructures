@@ -61,9 +61,9 @@ public class IntArray : IEnumerable<int>
     // Add an element to the dynamic Array
     public void add(int value)
     {
-        if(length + 1 >= capacity)
+        if (length + 1 >= capacity)
         {
-            if(capacity == 0) { capacity = 1;}
+            if (capacity == 0) { capacity = 1; }
             else
             {
                 capacity *= 2; // Double the Cap
@@ -74,14 +74,14 @@ public class IntArray : IEnumerable<int>
     // Removes the element at specified index.
     public void removeAt(int index)
     {
-         // Copy over the array removing the Index
+        // Copy over the array removing the Index
     }
     // Search and Remove element:
     public bool remove(int elem)
     {
-        for(int i = 0; i < length; i++)
+        for (int i = 0; i < length; i++)
         {
-            if(array[i] == elem)
+            if (array[i] == elem)
             {
                 removeAt(i);
                 return true;
@@ -113,7 +113,7 @@ public class IntArray : IEnumerable<int>
     // Enumerator Interface
     public IEnumerator GetEnumerator()
     {
-        return (IEnumerator) GetEnumerator();
+        return (IEnumerator)GetEnumerator();
     }
     IEnumerator<int> IEnumerable<int>.GetEnumerator()
     {
@@ -121,7 +121,7 @@ public class IntArray : IEnumerable<int>
     }
 }
 
-public class goThroughEnumerator: IEnumerator<int>
+public class goThroughEnumerator : IEnumerator<int>
 {
     public int[] array;
     int pos = -1;
@@ -130,18 +130,33 @@ public class goThroughEnumerator: IEnumerator<int>
     {
         this.array = array;
     }
-    public bool moveNext()
-    {
-        pos++;
-        return(pos < array.Length);
-    }
+    
     int IEnumerator<int>.Current
     {
         get { return array[pos]; }
     }
+
+    public object Current => throw new NotImplementedException();
+
     public void reset()
     {
         pos = -1;
+    }
+
+    public bool MoveNext()
+    {
+        pos++;
+        return (pos < array.Length);
+    }
+
+    public void Reset()
+    {
+        pos = -1;
+    }
+
+    public void Dispose()
+    {
+        throw new NotImplementedException();
     }
 }
 
@@ -155,16 +170,16 @@ namespace TestIntArray
             //Test.setIndex(0, 1);
             //Test.setIndex(1, 2);
             //Test.setIndex(2, 3);
-            Console.WriteLine(Test.size());
-            int[] testArray = new int[] {1,2,3,4,5,6,7,8,9};
+            //Console.WriteLine(Test.size());
+            int[] testArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-            for(int i = 0; i < testArray.Length; i++)
+            for (int i = 0; i < testArray.Length; i++)
             {
                 Console.WriteLine(testArray[i]);
             }
 
-           // IntArray Test2 = new IntArray(testArray);
-           // Console.WriteLine(Test2.isEmptyArray());
+            // IntArray Test2 = new IntArray(testArray);
+            // Console.WriteLine(Test2.isEmptyArray());
         }
     }
 }
