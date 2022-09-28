@@ -1,10 +1,11 @@
-﻿// Dynamic Array Rewrite from Java Source code to C#.
+// Dynamic Array Rewrite from Java Source code to C#.
 // SRC code https://github.com/williamfiset/Algorithms/blob/master/src/main/java/com/williamfiset/algorithms/datastructures/dynamicarray/IntArray.java
 using System;
 using System.Collections;
+using System.Collections.Generic;
 //Console.WriteLine(1 << 3);
 
-public class IntArray : IEnumerable
+public class IntArray : IEnumerable<int>
 {
     // Set Default Capacity to 8 Bits
     // I think the reason for this is because the int size in C# is 4Bytes
@@ -112,7 +113,35 @@ public class IntArray : IEnumerable
     // Enumerator Interface
     public IEnumerator GetEnumerator()
     {
-        throw new NotImplementedException();
+        return (IEnumerator) GetEnumerator();
+    }
+    IEnumerator<int> IEnumerable<int>.GetEnumerator()
+    {
+        return (IEnumerator<int>)GetEnumerator();
+    }
+}
+
+public class goThroughEnumerator: IEnumerator<int>
+{
+    public int[] array;
+    int pos = -1;
+
+    public goThroughEnumerator(int[] array)
+    {
+        this.array = array;
+    }
+    public bool moveNext()
+    {
+        pos++;
+        return(pos < array.Length);
+    }
+    int IEnumerator<int>.Current
+    {
+        get { return array[pos]; }
+    }
+    public void reset()
+    {
+        pos = -1;
     }
 }
 
@@ -122,15 +151,20 @@ namespace TestIntArray
     {
         static void Main()
         {
-            IntArray Test = new IntArray(3);
-            Test.setIndex(0, 1);
-            Test.setIndex(1, 2);
-            Test.setIndex(2, 3);
+            //IntArray Test = new IntArray(3);
+            //Test.setIndex(0, 1);
+            //Test.setIndex(1, 2);
+            //Test.setIndex(2, 3);
             Console.WriteLine(Test.size());
             int[] testArray = new int[] {1,2,3,4,5,6,7,8,9};
 
-            IntArray Test2 = new IntArray(testArray);
-            Console.WriteLine(Test2.isEmptyArray());
+            for(int i = 0; i < testArray.Length; i++)
+            {
+                Console.WriteLine(testArray[i]);
+            }
+
+           // IntArray Test2 = new IntArray(testArray);
+           // Console.WriteLine(Test2.isEmptyArray());
         }
     }
 }
