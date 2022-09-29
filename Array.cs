@@ -31,7 +31,7 @@ public class IntArray : IEnumerable<int>
         // Create new array with that capacity.
         array = new int[capacity];
     }
-    // Given an array make it dynamic
+    // Given an array make it dynamic (Makes a copy of the array setting the Length and Capacity to the original arrays length)
     public IntArray(int[] arr)
     {
         if (array == null) throw new Exception("Array can't be null");
@@ -72,9 +72,20 @@ public class IntArray : IEnumerable<int>
         array[length++] = value;
     }
     // Removes the element at specified index.
-    public void removeAt(int index)
+    public void removeAt(int indexToRemove)
     {
         // Copy over the array removing the Index
+
+        int[] copied = new int[array.Length - 1];
+        for(int i =0; i< copied.Length-1; i++)
+        {
+            if(copied[i] != array[indexToRemove])
+            {
+                copied[i] = array[i];
+            }
+            array = copied;
+        }
+        
     }
     // Search and Remove element:
     public bool remove(int elem)
@@ -136,7 +147,7 @@ public class goThroughEnumerator : IEnumerator<int>
         get { return array[pos]; }
     }
 
-    public object Current => throw new NotImplementedException();
+    public object Current => this;
 
     public void reset()
     {
@@ -166,17 +177,40 @@ namespace TestIntArray
     {
         static void Main()
         {
-            //IntArray Test = new IntArray(3);
-            //Test.setIndex(0, 1);
-            //Test.setIndex(1, 2);
-            //Test.setIndex(2, 3);
-            //Console.WriteLine(Test.size());
-            int[] testArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            IntArray testArray2 = new IntArray(10); 
+            testArray2.add(1);
+            testArray2.add(2);
+            testArray2.add(5); // Add Element Works
 
-            for (int i = 0; i < testArray.Length; i++)
-            {
-                Console.WriteLine(testArray[i]);
-            }
+            //Console.WriteLine("Current Number of Elements in the IntArray");
+            //Console.WriteLine(testArray2.size()); // Size Works Returns the Current Number of Elements
+            //Console.WriteLine("Is array Empty?");
+            //Console.WriteLine(testArray2.isEmptyArray()); //Works Return True of array is empty false otherwise 
+            //Console.WriteLine("Insert the Index you want to get: ");
+            //string userDefinedInput = Console.ReadLine(); // Get Index Works
+            //Console.WriteLine("Value at the index you have selected is: " + testArray2.getIndex(Int32.Parse(userDefinedInput)));
+            //Console.WriteLine("Enter an index you want to set at: ");
+            //string indexAt = Console.ReadLine();
+            //Console.WriteLine("Enter the Value that you want to set: ");
+            //string valueToSet = Console.ReadLine();
+            //testArray2.setIndex(Int32.Parse(indexAt), Int32.Parse(valueToSet));
+            //Console.WriteLine($"You have set {valueToSet} at INDEX: {indexAt}"); // Set Index Works:
+            //Console.WriteLine("Enter the Index you want to Remove: ");
+            testArray2.removeAt(2);
+            Console.WriteLine(testArray2.getIndex(0));
+            Console.WriteLine(testArray2.getIndex(1));
+            Console.WriteLine(testArray2.getIndex(2));
+
+
+            //for (int i = 0; i < testArray.Length; i++)
+            //{
+            //    Console.WriteLine(testArray[i]);
+            //}
+
+            //foreach (int item in testArray)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             // IntArray Test2 = new IntArray(testArray);
             // Console.WriteLine(Test2.isEmptyArray());
