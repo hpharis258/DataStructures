@@ -1,3 +1,2 @@
-# DataStructures
-Data Structures Implementations in C#
+# DataStructures and Algorithms Implementations in C#
 
