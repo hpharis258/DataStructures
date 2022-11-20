@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\Dynamic Array\\DynamicArray\\DynamicArray.csproj": {}
+    "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\DynamicArray\\DynamicArray.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\Dynamic Array\\DynamicArray\\DynamicArray.csproj": {
+    "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\DynamicArray\\DynamicArray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\Dynamic Array\\DynamicArray\\DynamicArray.csproj",
+        "projectUniqueName": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\DynamicArray\\DynamicArray.csproj",
         "projectName": "DynamicArray",
-        "projectPath": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\Dynamic Array\\DynamicArray\\DynamicArray.csproj",
+        "projectPath": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\DynamicArray\\DynamicArray.csproj",
         "packagesPath": "C:\\Users\\Haroldas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\Dynamic Array\\DynamicArray\\obj\\",
+        "outputPath": "C:\\Users\\Haroldas\\Desktop\\DATA STRUCTS\\DataStructures\\DynamicArray\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

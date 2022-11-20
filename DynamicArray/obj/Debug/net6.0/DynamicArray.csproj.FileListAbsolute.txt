@@ -13,3 +13,18 @@ C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\Dynamic Array\DynamicArray
 C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\Dynamic Array\DynamicArray\obj\Debug\net6.0\DynamicArray.pdb
 C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\Dynamic Array\DynamicArray\obj\Debug\net6.0\DynamicArray.genruntimeconfig.cache
 C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\Dynamic Array\DynamicArray\obj\Debug\net6.0\ref\DynamicArray.dll
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\bin\Debug\net6.0\DynamicArray.exe
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\bin\Debug\net6.0\DynamicArray.deps.json
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\bin\Debug\net6.0\DynamicArray.runtimeconfig.json
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\bin\Debug\net6.0\DynamicArray.dll
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\bin\Debug\net6.0\DynamicArray.pdb
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.csproj.AssemblyReference.cache
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.AssemblyInfoInputs.cache
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.AssemblyInfo.cs
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.csproj.CoreCompileInputs.cache
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.dll
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\refint\DynamicArray.dll
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.pdb
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\DynamicArray.genruntimeconfig.cache
+C:\Users\Haroldas\Desktop\DATA STRUCTS\DataStructures\DynamicArray\obj\Debug\net6.0\ref\DynamicArray.dll
